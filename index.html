@@ -7,19 +7,20 @@
         
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
         
-        <link href="style.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
         <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
 
         <title>Portfolio Project</title>
     </head>
     <body>
         <header class="header" id="header">
             <nav class="nav container">
-                <a href="#" class="nav_logo">Fábio</a>
+                <a href="#contact" class="nav_logo">Fábio</a>
                 <div class="nav_menu" id="nav-menu">
                     <ul class="nav_list grid">
                         <li class="nav_item">
-                            <a href="#home" class="nav_link">
+                            <a href="#home" class="nav_link active-link">
                                 <i class="uil uil-estate nav_icon"></i> Home
                             </a>
                         </li>
@@ -34,71 +35,68 @@
                             </a>
                         </li>
                         <li class="nav_item">
-                            <a href="#services" class="nav_link">
-                                <i class="uil uil-briefcase-alt nav_icon"></i> Services
-                                
+                            <a href="#knowledges" class="nav_link">
+                                <i class="uil uil-brain nav_icon"></i> Knowledges
                             </a>
                         </li>
                         <li class="nav_item">
-                            <a href="#portifolio" class="nav_link">
+                            <a href="#qualification" class="nav_link">
+                                <i class="uil uil-graduation-cap nav_icon"></i> Qualification
+                            </a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="#portfolio" class="nav_link">
                                 <i class="uil uil-scenery nav_icon"></i> Portfolio
-                                
                             </a>
                         </li>
                         <li class="nav_item">
                             <a href="#contact" class="nav_link">
                                 <i class="uil uil-message nav_icon"></i> Contact
-                                
+                            </a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="at.html" class="nav_link">
+                                <i class="uil uil-edit nav_icon"></i> AT Questions
                             </a>
                         </li>
                     </ul>
                     <i class="uil uil-times nav_close" id="nav-close"></i>
                 </div>
                 <div class="nav_btns">
+
+                    <i class="uil uil-moon change-theme" id="theme-button"></i>
+
                     <div class="nav_toggle" id="nav-toggle">
                         <i class="uil uil-apps"></i>
                     </div>
                 </div>
             </nav>
         </header>
+
         <main class="main">
+
             <section class="home section" id="home">
                 <div class="home_container container grid">
                     <div class="home_content grid">
                         <div class="home_social">
-                            <a href="https://www.linkedin.com/" target="_blank" class="home_social-icon">
+                            <a href="https://www.linkedin.com/in/f%C3%A1bio-pelagaggi-61551a1a8" target="_blank" class="home_social-icon">
                                 <i class="uil uil-linkedin-alt"></i>
                             </a>
-                            <a href="https://github.com/" target="_blank" class="home_social-icon">
+                            <a href="https://github.com/FabioPelagaggi" target="_blank" class="home_social-icon">
                                 <i class="uil uil-github-alt"></i>
                             </a>
                         </div>
 
                         <div class="home_img">
                             <svg class="home_blob" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                                <mask id="mask0" mask-type="alpha">
+                                <mask id="mask0">
                                     <path d="M31.5,-28.9C39.7,-14.8,44.5,-1.8,43.3,12.4C42,26.5,34.8,41.8,22.6,48.2C10.3,54.6,-6.8,52.2,-25.1,45.8C-43.3,39.4,-62.7,29.1,-63.6,16.8C-64.6,4.6,-47.2,-9.6,-33.6,-24.9C-19.9,-40.3,-9.9,-56.7,0.9,-57.4C11.6,-58.1,23.3,-43,31.5,-28.9Z" transform="translate(100 100)" />
                                 </mask>
                                 <g mask="url(#mask0)">
                                     <path d="M31.5,-28.9C39.7,-14.8,44.5,-1.8,43.3,12.4C42,26.5,34.8,41.8,22.6,48.2C10.3,54.6,-6.8,52.2,-25.1,45.8C-43.3,39.4,-62.7,29.1,-63.6,16.8C-64.6,4.6,-47.2,-9.6,-33.6,-24.9C-19.9,-40.3,-9.9,-56.7,0.9,-57.4C11.6,-58.1,23.3,-43,31.5,-28.9Z" transform="translate(100 100)" />
-                                    <image class="home_blob-img" x='30' y='40' href="assets/img/perfil.png"/>
+                                    <image class="home_blob-img" height="120" width="" x='30' y='40' href="assets/images/perfil.png"/>
                                 </g>
                             </svg>
-                            <!-- <svg class="home_blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                <mask id="mask0" mask-type="alpha">
-                                    <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
-                                    130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
-                                    97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
-                                    0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
-                                </mask>
-                                <g mask="url(#mask0)">
-                                    <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
-                                    165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
-                                    129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
-                                    -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
-                                    <image class="home_blob-img" x='12' y='25' href="assets/img/perfil.png"/>
-                                </g>
-                            </svg> -->
                         </div>
                         <div class="home_data">
                             <h1 class="home_title">
@@ -108,7 +106,7 @@
                             <p class="home_description">
                                 Software Engineering student looking for challenges that I can use my programming knowledge and my life experience to learn and acquire new achievements.
                             </p>
-                            <a href="#contact" class="button button--flex">
+                            <a href="#contact" class="button button--flex button_contact">
                                 Contact Me<i class="uil uil-message button_icon"></i>
                             </a>
                         </div>
@@ -122,23 +120,20 @@
                     </div>
                 </div>
             </section>
+
             <section class="about section" id="about">
                 <h2 class="section_title">About Me</h2>
                 <span class="section_subtitle">My Introduction</span>
 
                 <div class="about_container container grid">
-                    <img src="assets/img/about.jpeg" alt="" class="about_img">
+                    <img src="assets/images/about.jpeg" alt="Field Trip on Ceara, Brazil" class="about_img">
                     <div class="about_data">
                         <p class="about_description">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur totam ex molestiae explicabo ipsa perferendis laudantium similique iusto, ipsum assumenda laborum nihil recusandae ducimus modi natus rem, corporis sapiente? Inventore.
+                            After trying many different university courses, I finally found myself in a software engineering career. I enjoy challenges and learn new code languages. And I am always open-minded to any opportunity life can bring me.
                         </p>
                         <div class="about_info">
-                            <!-- <div>
-                                <span class="about_info-title">08+</span>
-                                <span class="about_info-name">Year<br> experience</span>
-                            </div> -->
                             <div>
-                                <span class="about_info-title">3</span>
+                                <span class="about_info-title">3+</span>
                                 <span class="about_info-name">Completed<br> project</span>
                             </div>
                             <div>
@@ -146,64 +141,26 @@
                                 <span class="about_info-name">Companies<br> worked</span>
                             </div>
                         </div>
-                        <div class="about_buttons">
-                            <a href="assets/pdf/Fabio_Pelagaggi-CV.pdf" class="button button--flex">
+                        <div class="about_button">
+                            <a href="assets/pdf/Fabio_Pelagaggi-CV.pdf" target="_blank" class="button button--flex">
                                 Download CV<i class="uil uil-download-alt button_icon"></i>
                             </a>
                         </div>
                     </div>
                 </div>
             </section>
+
             <section class="skills section" id="skills">
                 <h2 class="section_title">Skills</h2>
                 <span class="section_subtitle">My Technical Level</span>
                 <div class="skills_container container grid">
                     <div>
-                        <div class="skills_content skills_open">
-                            <div class="skills_header">
-                                <i class="uil uil-brain skills_icon"></i>
-                                <div>
-                                    <h2 class="skills_title">Knowledge</h2>
-                                    <span class="skills_subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic sapiente repudiandae rem aut distinctio incidunt. Vero reiciendis sit minima doloribus iusto rem quis nesciunt explicabo ex illo iure, recusandae voluptatem!</span>
-                                </div>
-                                <i class="uil uil-angle-down skills_arrow"></i>
-                            </div>
-                            <div class="skills_list grid">
-                                <div class="skills_data">
-                                    <div class="skills_titles">
-                                        <h3 class="skills_name">Computer Architecture and Operating Systems</h3>
-                                        <span class="skills_number">80%</span>
-                                    </div>
-                                    <div class="skills_bar">
-                                        <span class="skills_percentage skills_os"></span>
-                                    </div>
-                                </div>
-                                <div class="skills_data">
-                                    <div class="skills_titles">
-                                        <h3 class="skills_name">Scrum Agile Software Development</h3>
-                                        <span class="skills_number">75%</span>
-                                    </div>
-                                    <div class="skills_bar">
-                                        <span class="skills_percentage skills_agile"></span>
-                                    </div>
-                                </div>
-                                <div class="skills_data">
-                                    <div class="skills_titles">
-                                        <h3 class="skills_name">Computer Network Architecture</h3>
-                                        <span class="skills_number">65%</span>
-                                    </div>
-                                    <div class="skills_bar">
-                                        <span class="skills_percentage skills_net"></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                         <div class="skills_content skills_close">
                             <div class="skills_header">
                                 <i class="uil uil-brackets-curly skills_icon"></i>
                                 <div>
                                     <h2 class="skills_title">Frontend Developer</h2>
-                                    <span class="skills_subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic sapiente repudiandae rem aut distinctio incidunt. Vero reiciendis sit minima doloribus iusto rem quis nesciunt explicabo ex illo iure, recusandae voluptatem!</span>
+                                    <!-- <span class="skills_subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic sapiente repudiandae rem aut distinctio incidunt. Vero reiciendis sit minima doloribus iusto rem quis nesciunt explicabo ex illo iure, recusandae voluptatem!</span> -->
                                 </div>
                                 <i class="uil uil-angle-down skills_arrow"></i>
                             </div>
@@ -211,19 +168,10 @@
                                 <div class="skills_data">
                                     <div class="skills_titles">
                                         <h3 class="skills_name">HTML</h3>
-                                        <span class="skills_number">70%</span>
+                                        <span class="skills_number">30%</span>
                                     </div>
                                     <div class="skills_bar">
                                         <span class="skills_percentage skills_html"></span>
-                                    </div>
-                                </div>
-                                <div class="skills_data">
-                                    <div class="skills_titles">
-                                        <h3 class="skills_name">JavaScript</h3>
-                                        <span class="skills_number">75%</span>
-                                    </div>
-                                    <div class="skills_bar">
-                                        <span class="skills_percentage skills_js"></span>
                                     </div>
                                 </div>
                                 <div class="skills_data">
@@ -251,7 +199,7 @@
                                 <i class="uil uil-database-alt skills_icon"></i>
                                 <div>
                                     <h2 class="skills_title">Backend Developer</h2>
-                                    <span class="skills_subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic sapiente repudiandae rem aut distinctio incidunt. Vero reiciendis sit minima doloribus iusto rem quis nesciunt explicabo ex illo iure, recusandae voluptatem!</span>
+                                    <!-- <span class="skills_subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic sapiente repudiandae rem aut distinctio incidunt. Vero reiciendis sit minima doloribus iusto rem quis nesciunt explicabo ex illo iure, recusandae voluptatem!</span> -->
                                 </div>
                                 <i class="uil uil-angle-down skills_arrow"></i>
                             </div>
@@ -268,10 +216,28 @@
                                 <div class="skills_data">
                                     <div class="skills_titles">
                                         <h3 class="skills_name">Java</h3>
-                                        <span class="skills_number">35%</span>
+                                        <span class="skills_number">20%</span>
                                     </div>
                                     <div class="skills_bar">
                                         <span class="skills_percentage skills_java"></span>
+                                    </div>
+                                </div>
+                                <div class="skills_data">
+                                    <div class="skills_titles">
+                                        <h3 class="skills_name">Kotlin</h3>
+                                        <span class="skills_number">67%</span>
+                                    </div>
+                                    <div class="skills_bar">
+                                        <span class="skills_percentage skills_java"></span>
+                                    </div>
+                                </div>
+                                <div class="skills_data">
+                                    <div class="skills_titles">
+                                        <h3 class="skills_name">JavaScript</h3>
+                                        <span class="skills_number">45%</span>
+                                    </div>
+                                    <div class="skills_bar">
+                                        <span class="skills_percentage skills_js"></span>
                                     </div>
                                 </div>
                                 <div class="skills_data">
@@ -290,7 +256,82 @@
                 </div>
             </section>
 
-            <section class="qualification section">
+            <section class="knowledges section" id="knowledges">
+                <h2 class="section_title">Knowledges</h2>
+                <span class="section_subtitle">My acquired knowledge</span>
+
+                <div class="knowledges_container container grid">
+                    <div class="knowledges_content">
+                        <div>
+                            <i class="uil uil-brain knowledges_icon"></i>
+                            <h3 class="knowledges_title">Theoretical</h3>
+                        </div>
+                        <span class="button button--flex button--small button--link knowledges_button">
+                            View More
+                            <i class="uil uil-arrow-right button_icon"></i>
+                        </span>
+                        <div class="knowledges_modal">
+                            <div class="knowledges_modal-content">
+                                <h4 class="knowledges_modal-title">Theoretical Knowledge</h4>
+                                <i class="uil uil-times knowledges_modal-close"></i>
+
+                                <ul class="knowledges_modal-knowledges grid">
+                                    <li class="knowledges_modal-knowledge">
+                                        <i class="uil uil-check-circle knowledges_modal-icon"></i>
+                                        <p><strong>Agile Software Development:</strong> Experience with Scrum Agile Software Development.</p>
+                                    </li>
+                                    <li class="knowledges_modal-knowledge">
+                                        <i class="uil uil-check-circle knowledges_modal-icon"></i>
+                                        <p><strong>Computer Architecture and Operating Systems:</strong> Knowledge of computer architecture, hardware components, operating systems, kernel and software. Knowledge in assembly and maintenance of computers in both hardware and software level.</p>
+                                    </li>
+                                    <li class="knowledges_modal-knowledge">
+                                        <i class="uil uil-check-circle knowledges_modal-icon"></i>
+                                        <p><strong>Computer Network Architecture:</strong> Knowledge of IEEE 802.3 and 802.11, b, a, g, n, ac interfaces. And its components; Routers, Switch, Bridge, Hubs. TCP / IP and OSI protocols.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="knowledges_content">
+                        <div>
+                            <i class="uil uil-arrow  knowledges_icon"></i>
+                            <h3 class="knowledges_title">Coding</h3>
+                        </div>
+                        <span class="button button--flex button--small button--link knowledges_button">
+                            View More
+                            <i class="uil uil-arrow-right button_icon"></i>
+                        </span>
+                        <div class="knowledges_modal">
+                            <div class="knowledges_modal-content">
+                                <h4 class="knowledges_modal-title">Coding Knowledge</h4>
+                                <i class="uil uil-times knowledges_modal-close"></i>
+
+                                <ul class="knowledges_modal-knowledges grid">
+                                    <li class="knowledges_modal-knowledge">
+                                        <i class="uil uil-check-circle knowledges_modal-icon"></i>
+                                        <p><strong>Python:</strong> Knowledge in Python language, with experience with several of its modules, including; psutil, os, cpuinfo, platform, subprocess, socket, nmap, threading, BeautifulSoup, requests, pygame among others.
+                                            Experience designing and develop a software using Python language, exploring concepts of network architecture, computer architecture and operating systems.</p>
+                                    </li>
+                                    <li class="knowledges_modal-knowledge">
+                                        <i class="uil uil-check-circle knowledges_modal-icon"></i>
+                                        <p><strong>Kotlin:</strong> Knowledge in Android Development using Kotlin language and MVVM architecture. Experience in the following features: Publish to Google Play app store, Security Architecture for apps, Ads and Purchases, accessibility techniques in Android interfaces, APIs RESTful, Firebase.</p>
+                                    </li>
+                                    <li class="knowledges_modal-knowledge">
+                                        <i class="uil uil-check-circle knowledges_modal-icon"></i>
+                                        <p><strong>JavaScript:</strong> ...</p>
+                                    </li>
+                                    <li class="knowledges_modal-knowledge">
+                                        <i class="uil uil-check-circle knowledges_modal-icon"></i>
+                                        <p><strong>HTML e CSS:</strong> ...</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="qualification section" id="qualification">
                 <h2 class="section_title">Qualification</h2>
                 <span class="section_subtitle">My Journey</span>
 
@@ -301,7 +342,7 @@
                             Education
                         </div>
                         <div class="qualification_button button--flex" data-target="#work">
-                            <i class="uil uil-suitcase qualification_icon"></i></i>
+                            <i class="uil uil-suitcase qualification_icon"></i>
                             Work
                         </div>
                     </div>
@@ -471,80 +512,150 @@
                     </div>
                 </div>
             </section>
-            <section class="services section" id="services">
-                <h2 class="section_title">Services</h2>
-                <span class="section_subtitle">What i offer</span>
 
-                <div class="services_container container grid">
-                    <div class="services_content">
-                        <div>
-                            <i class="uil uil-web-grid services_icon"></i>
-                            <h3 class="services_title">Leroblar <br> Lero Lero</h3>
-                        </div>
-                        <span class="button button--flex button--small button--link services_button">
-                            View More
-                            <i class="uil uil-arrow-right button_icon"></i>
-                        </span>
-                        <div class="services_modal">
-                            <div class="services_modal-content">
-                                <h4 class="services_modal-title">Leroblar <br> Lero Lero</h4>
-                                <i class="uil uil-times services_modal-close"></i>
+            <section class="portfolio section" id="portfolio">
+                <h2 class="section_title">My Projects</h2>
+                <span class="section_subtitle">Portfolio</span>
 
-                                <ul class="services_modal-services grid">
-                                    <li class="services_modal-service">
-                                        <i class="uil uil-check-circle services_modal-icon"></i>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate aliquid eum accusamus dignissimos exercitationem inventore expedita natus tenetur dolore voluptate saepe, provident doloribus iusto earum eaque atque ipsa temporibus ducimus?</p>
-                                    </li>
-                                    <li class="services_modal-service">
-                                        <i class="uil uil-check-circle services_modal-icon"></i>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate aliquid eum accusamus dignissimos exercitationem inventore expedita natus tenetur dolore voluptate saepe, provident doloribus iusto earum eaque atque ipsa temporibus ducimus?</p>
-                                    </li>
-                                    <li class="services_modal-service">
-                                        <i class="uil uil-check-circle services_modal-icon"></i>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate aliquid eum accusamus dignissimos exercitationem inventore expedita natus tenetur dolore voluptate saepe, provident doloribus iusto earum eaque atque ipsa temporibus ducimus?</p>
-                                    </li>
-                                </ul>
+                <div class="portfolio_container container swiper-container-3d">
+                    <div class="swiper-wrapper">
+
+                        <div class="portfolio_content grid swiper-slide">
+                            <img src="assets/images/MT_Bouncing_Balls.png" alt="Multithreading Buncing Ball Screanshot" class="portfolio_img">
+
+                            <div class="portfolio_data">
+                                <h3 class="portfolio_title">Multithreading Bouncing Ball</h3>
+                                <p class="portfolio_description">
+                                    Software developed to demonstrate, in a visual way, the functioning of multithreading in Python. Recommended using process management tools, such as ProcessExplorer, to better visualize the behavior of threads in the system. The software creates a thread to processes the ball movement of each ball by demand. Therefore, creating multiples threads that can be observed.
+                                </p>
+                                <a href="" class="button button--flex button--small portfolio_button">
+                                    Download on GitHub
+                                    <i class="uil uil-code-branch button_icon"></i>
+                                </a>
                             </div>
                         </div>
+
+                        <div class="portfolio_content grid swiper-slide">
+                            <img src="assets/images/MP_Bouncing_Balls.png" alt="Multiprocessing-LocalHost Bouncing Balls Screanshot" class="portfolio_img">
+
+                            <div class="portfolio_data">
+                                <h3 class="portfolio_title">Multiprocessing-LocalHost Bouncing Balls</h3>
+                                <p class="portfolio_description">
+                                    Software developed to demonstrate, in a visual way, the functioning of multiprocessing in Python. Recommended using process management tools, such as ProcessExplorer, to better visualize the behavior of threads in the system. The software creates a thread to processes the ball movement of each ball by demand. Therefore, creating multiples threads that can be observed.
+                                </p>
+                                <a href="" class="button button--flex button--small portfolio_button">
+                                    Download on GitHub
+                                    <i class="uil uil-code-branch button_icon"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="portfolio_content grid swiper-slide">
+                            <img src="assets/images/PC_Resources_Monitor.png" alt="PC Resources Monitor Screanshot" class="portfolio_img">
+
+                            <div class="portfolio_data">
+                                <h3 class="portfolio_title">PC Resources Monitor</h3>
+                                <p class="portfolio_description">
+                                    Project that aims to create a tool, using the Python programming language, that visually shows the use of the resources of some hardware components. This software shows graphically the percentage of use of the central processing unit, CPU, as well as the main memory and the main storage unit, as well as some other information regarding the computer hardware.
+                                </p>
+                                <a href="" class="button button--flex button--small portfolio_button">
+                                    Download on GitHub
+                                    <i class="uil uil-code-branch button_icon"></i>
+                                </a>
+                            </div>
+                        </div>
+
                     </div>
-                    <div class="services_content">
-                        <div>
-                            <i class="uil uil-web-grid services_icon"></i>
-                            <h3 class="services_title">Ui/Ux <br> Designer</h3>
-                        </div>
-                        <span class="button button--flex button--small button--link services_button">
-                            View More
-                            <i class="uil uil-arrow-right button_icon"></i>
-                        </span>
-                        <div class="services_modal">
-                            <div class="services_modal-content">
-                                <h4 class="services_modal-title">Ui/Ux <br> Designer</h4>
-                                <i class="uil uil-times services_modal-close"></i>
-
-                                <ul class="services_modal-services grid">
-                                    <li class="services_modal-service">
-                                        <i class="uil uil-check-circle services_modal-icon"></i>
-                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis molestias voluptate porro quaerat praesentium deleniti sunt adipisci dolor explicabo illum exercitationem natus, laudantium vitae iusto dolore esse et nobis quis.</p>
-                                    </li>
-                                    <li class="services_modal-service">
-                                        <i class="uil uil-check-circle services_modal-icon"></i>
-                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis molestias voluptate porro quaerat praesentium deleniti sunt adipisci dolor explicabo illum exercitationem natus, laudantium vitae iusto dolore esse et nobis quis.</p>
-                                    </li>
-                                    <li class="services_modal-service">
-                                        <i class="uil uil-check-circle services_modal-icon"></i>
-                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis molestias voluptate porro quaerat praesentium deleniti sunt adipisci dolor explicabo illum exercitationem natus, laudantium vitae iusto dolore esse et nobis quis.</p>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
+                    
+                    <div class="swiper-button-next">
+                        <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+                    </div>
+                    <div class="swiper-button-prev">
+                        <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
                     </div>
                 </div>
             </section>
-            <!-- Comit Test -->
 
+            <section class="contact section" id="contact">
+                <h2 class="section_title">Contact Me</h2>
+                <!-- <span class="section_subtitle"> </span> -->
+                <div class="contact_container container grid">
+                    <form action="https://formspree.io/f/mleazydv" method="POST" class="contact_form grid">
+                        <div class="contact_inputs grid">
+                            <div class="contact_content">
+                                <label class="contact_label">Name</label>
+                                <input name="name" type="text" class="contact_input" required>
+                            </div>
+                            <div class="contact_content">
+                                <label class="contact_label">E-mail</label>
+                                <input type="email" name="_replyto" class="contact_input" required>
+                            </div>
+                        </div>
+                        <div class="contact_content">
+                            <label class="contact_label">Subject</label>
+                            <input name="subject" type="text" class="contact_input" required>
+                        </div>
+                        <div class="contact_content">
+                            <label class="contact_label">Message</label>
+                            <textarea name="message" cols="10" rows="10" class="contact_input"></textarea>
+                        </div>
+                        <div>
+                            <button type="submit" class="button button--flex button_form">
+                                Send Message
+                                <i class="uil uil-message button_icon"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </section>
 
         </main>
- 
-        <script src="script.js"></script>      
+
+        <footer class="footer">
+            <div class="footer_bg">
+                <div class="footer_container container grid">
+                    <div>
+                        <h2 class="footer_title">Fábio Pelagaggi</h2>
+                        <span class="footer_subtitle">Software Engineering</span>
+                    </div>
+
+                    <ul class="footer_links">
+                        <li>
+                            <a href="#skills" class="footer_link">Skills</a>
+                        </li>
+                        <li>
+                            <a href="#knowledges" class="footer_link">Knowledges</a>
+                        </li>
+                        <li>
+                            <a href="#qualification" class="footer_link">Qualification</a>
+                        </li>
+                        <li>
+                            <a href="#portfolio" class="footer_link">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="#contact" class="footer_link">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="footer_socials">
+                        <a href="https://www.linkedin.com/in/f%C3%A1bio-pelagaggi-61551a1a8" target="_blank" class="footer_social">
+                            <i class="uil uil-linkedin"></i>
+
+                        </a>
+                        <a href="https://github.com/FabioPelagaggi" target="_blank" class="footer_social">
+                            <i class="uil uil-github"></i>
+                        </a>
+                    </div>
+                </div>
+                <p class="footer_copy">
+                    &#169; Fábio Pelagaggi. Right Reserved
+                </p>
+            </div>
+        </footer>
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="uil uil-angle-up scrollup_icon"></i>
+        </a>
+
+        <script src="assets/js/swiper-bundle.min.js"></script>    
+        <script src="assets/js/script.js"></script>      
     </body>
 </html>
