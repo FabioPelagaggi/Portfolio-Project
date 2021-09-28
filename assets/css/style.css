@@ -129,7 +129,7 @@ img{
     mask-type: alpha;
 }
 .active-link{
-    color: var(--first-color-alt);
+    color: white;
 }
 
 .section{
