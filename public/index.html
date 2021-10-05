@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        
+        <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+        <link rel="icon" href="assets/images/programming.png">
+
+        <title>My Portfolio - Fabio Pelagaggi</title>
+    </head>
+    <body>
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#contact" class="nav_logo">Fábio</a>
+                <div class="nav_menu" id="nav-menu">
+                    <ul class="nav_list grid">
+                        <li class="nav_item">
+                            <a href="#home" class="nav_link active-link">
+                                <i class="uil uil-estate nav_icon"></i> Home
+                            </a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="#about" class="nav_link">
+                                <i class="uil uil-user nav_icon"></i> About 
+                            </a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="#skills" class="nav_link">
+                                <i class="uil uil-file-alt nav_icon"></i> Skills
+                            </a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="#knowledges" class="nav_link">
+                                <i class="uil uil-brain nav_icon"></i> Knowledges
+                            </a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="#qualification" class="nav_link">
+                                <i class="uil uil-graduation-cap nav_icon"></i> Qualification
+                            </a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="#portfolio" class="nav_link">
+                                <i class="uil uil-scenery nav_icon"></i> Portfolio
+                            </a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="#contact" class="nav_link">
+                                <i class="uil uil-message nav_icon"></i> Contact
+                            </a>
+                        </li>
+                    </ul>
+                    <i class="uil uil-times nav_close" id="nav-close"></i>
+                </div>
+                <div class="nav_btns">
+
+                    <i class="uil uil-moon change-theme" id="theme-button"></i>
+
+                    <div class="nav_toggle" id="nav-toggle">
+                        <i class="uil uil-apps"></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main class="main">
+
+            <section class="home section" id="home">
+                <div class="home_container container grid">
+                    <div class="home_content grid">
+                        <div class="home_social">
+                            <a href="https://www.linkedin.com/in/f%C3%A1bio-pelagaggi-61551a1a8" target="_blank" class="home_social-icon">
+                                <i class="uil uil-linkedin-alt"></i>
+                            </a>
+                            <a href="https://github.com/FabioPelagaggi" target="_blank" class="home_social-icon">
+                                <i class="uil uil-github-alt"></i>
+                            </a>
+                        </div>
+
+                        <div class="home_img">
+                            <svg class="home_blob" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                                <mask id="mask0">
+                                    <path d="M31.5,-28.9C39.7,-14.8,44.5,-1.8,43.3,12.4C42,26.5,34.8,41.8,22.6,48.2C10.3,54.6,-6.8,52.2,-25.1,45.8C-43.3,39.4,-62.7,29.1,-63.6,16.8C-64.6,4.6,-47.2,-9.6,-33.6,-24.9C-19.9,-40.3,-9.9,-56.7,0.9,-57.4C11.6,-58.1,23.3,-43,31.5,-28.9Z" transform="translate(100 100)" />
+                                </mask>
+                                <g mask="url(#mask0)">
+                                    <path d="M31.5,-28.9C39.7,-14.8,44.5,-1.8,43.3,12.4C42,26.5,34.8,41.8,22.6,48.2C10.3,54.6,-6.8,52.2,-25.1,45.8C-43.3,39.4,-62.7,29.1,-63.6,16.8C-64.6,4.6,-47.2,-9.6,-33.6,-24.9C-19.9,-40.3,-9.9,-56.7,0.9,-57.4C11.6,-58.1,23.3,-43,31.5,-28.9Z" transform="translate(100 100)" />
+                                    <image class="home_blob-img" height="120" width="" x='30' y='40' href="assets/images/perfil.png"/>
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="home_data">
+                            <h1 class="home_title">
+                                Fábio Pelagaggi
+                            </h1>
+                            <h3 class="home_subtitle">Software Engineering</h3>
+                            <p class="home_description">
+                                Software Engineering student looking for challenges that I can use my programming knowledge and my life experience to learn and acquire new achievements.
+                            </p>
+                            <a href="#contact" class="button button--flex button_contact">
+                                Contact Me<i class="uil uil-message button_icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="home_scroll">
+                        <a href="#about" class="home_scroll-button button--flex">
+                            <i class="uil uil-mouse-alt home_scroll-mouse"></i>
+                            <span class="home_scroll-name">Scroll Down</span>
+                            <i class="uil uil-arrow-down home_scroll-arrow"></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="about section" id="about">
+                <h2 class="section_title">About Me</h2>
+                <span class="section_subtitle">My Introduction</span>
+
+                <div class="about_container container grid">
+                    <img src="assets/images/about.jpeg" alt="Field Trip on Ceara, Brazil" class="about_img">
+                    <div class="about_data">
+                        <p class="about_description">
+                            After trying many different university courses, I finally found myself in a software engineering career. I enjoy challenges and learn new code languages. And I am always open-minded to any opportunity life can bring me.
+                        </p>
+                        <div class="about_info">
+                            <div>
+                                <span class="about_info-title">3+</span>
+                                <span class="about_info-name">Completed<br> project</span>
+                            </div>
+                            <div>
+                                <span class="about_info-title">04+</span>
+                                <span class="about_info-name">Companies<br> worked</span>
+                            </div>
+                        </div>
+                        <div class="about_button">
+                            <a href="assets/pdf/Fabio_Pelagaggi-CV_EN.pdf" target="_blank" class="button button--flex">
+                                Download CV<i class="uil uil-download-alt button_icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="skills section" id="skills">
+                <h2 class="section_title">Skills</h2>
+                <span class="section_subtitle">My Technical Level</span>
+                <div class="skills_container container grid">
+                    <div>
+                        <div class="skills_content skills_close">
+                            <div class="skills_header">
+                                <i class="uil uil-brackets-curly skills_icon"></i>
+                                <div>
+                                    <h2 class="skills_title">Frontend Developer</h2>
+                                    <!-- <span class="skills_subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic sapiente repudiandae rem aut distinctio incidunt. Vero reiciendis sit minima doloribus iusto rem quis nesciunt explicabo ex illo iure, recusandae voluptatem!</span> -->
+                                </div>
+                                <i class="uil uil-angle-down skills_arrow"></i>
+                            </div>
+                            <div class="skills_list grid">
+                                <div class="skills_data">
+                                    <div class="skills_titles">
+                                        <h3 class="skills_name">HTML</h3>
+                                        <span class="skills_number">60%</span>
+                                    </div>
+                                    <div class="skills_bar">
+                                        <span class="skills_percentage skills_html"></span>
+                                    </div>
+                                </div>
+                                <div class="skills_data">
+                                    <div class="skills_titles">
+                                        <h3 class="skills_name">CSS</h3>
+                                        <span class="skills_number">65%</span>
+                                    </div>
+                                    <div class="skills_bar">
+                                        <span class="skills_percentage skills_css"></span>
+                                    </div>
+                                </div>
+                                <div class="skills_data">
+                                    <div class="skills_titles">
+                                        <h3 class="skills_name">Android Kotlin</h3>
+                                        <span class="skills_number">70%</span>
+                                    </div>
+                                    <div class="skills_bar">
+                                        <span class="skills_percentage skills_kt"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skills_content skills_close">
+                            <div class="skills_header">
+                                <i class="uil uil-database-alt skills_icon"></i>
+                                <div>
+                                    <h2 class="skills_title">Backend Developer</h2>
+                                    <!-- <span class="skills_subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic sapiente repudiandae rem aut distinctio incidunt. Vero reiciendis sit minima doloribus iusto rem quis nesciunt explicabo ex illo iure, recusandae voluptatem!</span> -->
+                                </div>
+                                <i class="uil uil-angle-down skills_arrow"></i>
+                            </div>
+                            <div class="skills_list grid">
+                                <div class="skills_data">
+                                    <div class="skills_titles">
+                                        <h3 class="skills_name">Python</h3>
+                                        <span class="skills_number">70%</span>
+                                    </div>
+                                    <div class="skills_bar">
+                                        <span class="skills_percentage skills_html"></span>
+                                    </div>
+                                </div>
+                                <div class="skills_data">
+                                    <div class="skills_titles">
+                                        <h3 class="skills_name">Java</h3>
+                                        <span class="skills_number">20%</span>
+                                    </div>
+                                    <div class="skills_bar">
+                                        <span class="skills_percentage skills_java"></span>
+                                    </div>
+                                </div>
+                                <div class="skills_data">
+                                    <div class="skills_titles">
+                                        <h3 class="skills_name">Kotlin</h3>
+                                        <span class="skills_number">67%</span>
+                                    </div>
+                                    <div class="skills_bar">
+                                        <span class="skills_percentage skills_java"></span>
+                                    </div>
+                                </div>
+                                <div class="skills_data">
+                                    <div class="skills_titles">
+                                        <h3 class="skills_name">JavaScript</h3>
+                                        <span class="skills_number">45%</span>
+                                    </div>
+                                    <div class="skills_bar">
+                                        <span class="skills_percentage skills_js"></span>
+                                    </div>
+                                </div>
+                                <div class="skills_data">
+                                    <div class="skills_titles">
+                                        <h3 class="skills_name">Firebase</h3>
+                                        <span class="skills_number">75%</span>
+                                    </div>
+                                    <div class="skills_bar">
+                                        <span class="skills_percentage skills_firebase"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="knowledges section" id="knowledges">
+                <h2 class="section_title">Knowledges</h2>
+                <span class="section_subtitle">My acquired knowledge</span>
+
+                <div class="knowledges_container container grid">
+                    <div class="knowledges_content">
+                        <div>
+                            <i class="uil uil-brain knowledges_icon"></i>
+                            <h3 class="knowledges_title">Theoretical</h3>
+                        </div>
+                        <span class="button button--flex button--small button--link knowledges_button">
+                            View More
+                            <i class="uil uil-arrow-right button_icon"></i>
+                        </span>
+                        <div class="knowledges_modal">
+                            <div class="knowledges_modal-content">
+                                <h4 class="knowledges_modal-title">Theoretical Knowledge</h4>
+                                <i class="uil uil-times knowledges_modal-close"></i>
+
+                                <ul class="knowledges_modal-knowledges grid">
+                                    <li class="knowledges_modal-knowledge">
+                                        <i class="uil uil-check-circle knowledges_modal-icon"></i>
+                                        <p><strong>Agile Software Development:</strong> Experience with Scrum Agile Software Development.</p>
+                                    </li>
+                                    <li class="knowledges_modal-knowledge">
+                                        <i class="uil uil-check-circle knowledges_modal-icon"></i>
+                                        <p><strong>Computer Architecture and Operating Systems:</strong> Knowledge of computer architecture, hardware components, operating systems, kernel and software. Knowledge in assembly and maintenance of computers in both hardware and software level.</p>
+                                    </li>
+                                    <li class="knowledges_modal-knowledge">
+                                        <i class="uil uil-check-circle knowledges_modal-icon"></i>
+                                        <p><strong>Computer Network Architecture:</strong> Knowledge of IEEE 802.3 and 802.11, b, a, g, n, ac interfaces. And its components; Routers, Switch, Bridge, Hubs. TCP / IP and OSI protocols.</p>
+                                    </li>
+                                    <li class="knowledges_modal-knowledge">
+                                        <i class="uil uil-check-circle knowledges_modal-icon"></i>
+                                        <p><strong>Human–Computer Interaction Methods</strong></p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="knowledges_content">
+                        <div>
+                            <i class="uil uil-arrow  knowledges_icon"></i>
+                            <h3 class="knowledges_title">Coding</h3>
+                        </div>
+                        <span class="button button--flex button--small button--link knowledges_button">
+                            View More
+                            <i class="uil uil-arrow-right button_icon"></i>
+                        </span>
+                        <div class="knowledges_modal">
+                            <div class="knowledges_modal-content">
+                                <h4 class="knowledges_modal-title">Coding Knowledge</h4>
+                                <i class="uil uil-times knowledges_modal-close"></i>
+
+                                <ul class="knowledges_modal-knowledges grid">
+                                    <li class="knowledges_modal-knowledge">
+                                        <i class="uil uil-check-circle knowledges_modal-icon"></i>
+                                        <p><strong>Web Development: </strong>HTML5, CSS3, JavaScript, Media Query, JQuery</p>
+                                    </li>
+                                    <li class="knowledges_modal-knowledge">
+                                        <i class="uil uil-check-circle knowledges_modal-icon"></i>
+                                        <p><strong>Python: </strong>cpuinfo, platform, subprocess, socket, nmap, threading, BeautifulSoup, requests, pygame among others.</p>
+                                    </li>
+                                    <li class="knowledges_modal-knowledge">
+                                        <i class="uil uil-check-circle knowledges_modal-icon"></i>
+                                        <p><strong>Desenvolvimento Android, Kotlin: </strong>MVVM architecture, automated tests. Publish to Google Play app store, Security Architecture for apps, Ads and Purchases, technical accessibility in Android interfaces.</p>
+                                    </li>
+                                    <li class="knowledges_modal-knowledge">
+                                        <i class="uil uil-check-circle knowledges_modal-icon"></i>
+                                        <p><strong>RESTful APIs</strong></p>
+                                    </li>
+                                    <li class="knowledges_modal-knowledge">
+                                        <i class="uil uil-check-circle knowledges_modal-icon"></i>
+                                        <p><strong>NodeJs</strong></p>
+                                    </li>
+                                    <li class="knowledges_modal-knowledge">
+                                        <i class="uil uil-check-circle knowledges_modal-icon"></i>
+                                        <p><strong>MongoDB</strong></p>
+                                    </li>
+                                    <li class="knowledges_modal-knowledge">
+                                        <i class="uil uil-check-circle knowledges_modal-icon"></i>
+                                        <p><strong>Firebase</strong></p>
+                                    </li>
+                                    <li class="knowledges_modal-knowledge">
+                                        <i class="uil uil-check-circle knowledges_modal-icon"></i>
+                                        <p><strong>Git</strong></p>
+                                    </li>
+                                    <li class="knowledges_modal-knowledge">
+                                        <i class="uil uil-check-circle knowledges_modal-icon"></i>
+                                        <p><strong>GitHub</strong></p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="qualification section" id="qualification">
+                <h2 class="section_title">Qualification</h2>
+                <span class="section_subtitle">My Journey</span>
+
+                <div class="qualification_container container">
+                    <div class="qualification_tabs">
+                        <div class="qualification_button button--flex qualification_active" data-target='#education'>
+                            <i class="uil uil-graduation-cap qualification_icon"></i>
+                            Education
+                        </div>
+                        <div class="qualification_button button--flex" data-target="#work">
+                            <i class="uil uil-suitcase qualification_icon"></i>
+                            Work
+                        </div>
+                    </div>
+
+                    <div class="qualification_sections">
+                        <div class="qualification_content qualification_active" data-content id="education">
+
+                            <div class="qualification_data">
+                                <div>
+                                    <h3 class="qualification_title">Software Engineering</h3>
+                                    <span class="qualification_subtitle">Instituto Infnet</span>
+                                    <div class="qualification_calendar">
+                                        <i class="uil uil-schedule"></i>
+                                        2020 - 2024
+                                    </div>
+                                </div>
+                                <div>
+                                    <span class="qualification_rounder"></span>
+                                    <span class="qualification_line"></span>
+                                </div>
+                            </div>
+                            <div class="qualification_data">
+                                <div></div>
+                                
+                                <div>
+                                    <span class="qualification_rounder"></span>
+                                    <span class="qualification_line"></span>
+                                </div>
+                                <div>
+                                    <h3 class="qualification_title">Geology</h3>
+                                    <span class="qualification_subtitle">Universidade Federal do Rio de Janeiro - UFRJ</span>
+                                    <div class="qualification_calendar">
+                                        <i class="uil uil-schedule"></i>
+                                        2016 - 2018
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="qualification_data">
+                                <div>
+                                    <h3 class="qualification_title">Mathematics and Earth Sciences</h3>
+                                    <span class="qualification_subtitle">Universidade Federal do Rio de Janeiro - UFRJ</span>
+                                    <div class="qualification_calendar">
+                                        <i class="uil uil-schedule"></i>
+                                        2014 - 2016
+                                    </div>
+                                </div>
+                                <div>
+                                    <span class="qualification_rounder"></span>
+                                    <span class="qualification_line"></span>
+                                </div>
+                            </div>
+                            <div class="qualification_data">
+                                <div></div>
+                                
+                                <div>
+                                    <span class="qualification_rounder"></span>
+                                    <!-- <span class="qualification_line"></span> -->
+                                </div>
+
+                                <div>
+                                    <h3 class="qualification_title">Physics</h3>
+                                    <span class="qualification_subtitle">Universidade Federal do Rio de Janeiro - UFRJ</span>
+                                    <div class="qualification_calendar">
+                                        <i class="uil uil-schedule"></i>
+                                        2012 - 2014
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="qualification_content" data-content id="work">
+                            <div class="qualification_data">
+                                <div>
+                                    <h3 class="qualification_title">Internship Project Analyst</h3>
+                                    <span class="qualification_subtitle">TIM S.A. Brasil</span>
+                                    <div class="qualification_calendar">
+                                        <i class="uil uil-schedule"></i>
+                                        2021 - Currently
+                                    </div>
+                                </div>
+                                <div>
+                                    <span class="qualification_rounder"></span>
+                                    <span class="qualification_line"></span>
+                                </div>
+                            </div>
+                            <div class="qualification_data">
+                                <div></div>
+
+                                <div>
+                                    <span class="qualification_rounder"></span>
+                                    <span class="qualification_line"></span>
+                                </div>
+
+                                <div>
+                                    <h3 class="qualification_title">Work at Height</h3>
+                                    <span class="qualification_subtitle">Certificado NR35</span>
+                                    <div class="qualification_calendar">
+                                        <i class="uil uil-schedule"></i>
+                                        2016 - 2019
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="qualification_data">
+                                <div>
+                                    <h3 class="qualification_title">Paleontology Laboratory</h3>
+                                    <span class="qualification_subtitle">Universidade Federal do Rio de Janeiro - UFRJ</span>
+                                    <div class="qualification_calendar">
+                                        <i class="uil uil-schedule"></i>
+                                        2016 - 2018
+                                    </div>
+                                </div>
+                                <div>
+                                    <span class="qualification_rounder"></span>
+                                    <span class="qualification_line"></span>
+                                </div>
+                            </div>
+                            <div class="qualification_data">
+                                <div></div>
+
+                                <div>
+                                    <span class="qualification_rounder"></span>
+                                    <span class="qualification_line"></span>
+                                </div>
+
+                                <div>
+                                    <h3 class="qualification_title">Mineralogy Laboratory</h3>
+                                    <span class="qualification_subtitle">Universidade Federal do Rio de Janeiro - UFRJ</span>
+                                    <div class="qualification_calendar">
+                                        <i class="uil uil-schedule"></i>
+                                        2015 - 2016
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="qualification_data">
+                                <div>
+                                    <h3 class="qualification_title">Technical Support</h3>
+                                    <span class="qualification_subtitle">Virtua Server</span>
+                                    <div class="qualification_calendar">
+                                        <i class="uil uil-schedule"></i>
+                                        2012 - 2014
+                                    </div>
+                                </div>
+                                <div>
+                                    <span class="qualification_rounder"></span>
+                                    <span class="qualification_line"></span>
+                                </div>
+                            </div>
+                            <div class="qualification_data">
+                                <div></div>
+                                
+                                <div>
+                                    <span class="qualification_rounder"></span>
+                                    <!-- <span class="qualification_line"></span> -->
+                                </div>
+
+                                <div>
+                                    <h3 class="qualification_title">Recenseador - Censo 2010</h3>
+                                    <span class="qualification_subtitle">Instituto Brasileiro de Geografia e Estatistica - IBGE</span>
+                                    <div class="qualification_calendar">
+                                        <i class="uil uil-schedule"></i>
+                                        2009
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="portfolio section" id="portfolio">
+                <h2 class="section_title">My Projects</h2>
+                <span class="section_subtitle">Portfolio</span>
+
+                <div class="portfolio_container container swiper-container-3d">
+                    <div class="swiper-wrapper">
+
+                        <div class="portfolio_content grid swiper-slide">
+                            <img src="assets/images/Social_Pet.png" alt="App Screenshot" class="portfolio_img">
+
+                            <div class="portfolio_data">
+                                <h3 class="portfolio_title">Social Pet</h3>
+                                <p class="portfolio_description">
+                                    Android team project developed using agile Scrum methodology, with versioning tools like Git. The project consisted of a social network for android systems. Its development was carried out using Kotlin language and MVVM architecture. The following aspects have been implemented: Publish to Google Play app store, Security Architecture for apps, Ads and Shopping, Accessibility techniques in Android interfaces, RESTful APIs, Firebase.
+                                </p>
+                                <a href="https://github.com/z21GRPEDS01BDA501N1/Unify-Project.git" target="_blank" class="button button--flex button--small portfolio_button">
+                                    Download on GitHub
+                                    <i class="uil uil-code-branch button_icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="portfolio_content grid swiper-slide">
+                            <img src="assets/images/PC_Resources_Monitor.png" alt="PC Resources Monitor Screenshot" class="portfolio_img">
+
+                            <div class="portfolio_data">
+                                <h3 class="portfolio_title">PC Resources Monitor</h3>
+                                <p class="portfolio_description">
+                                    Project that aims to create a tool, using the Python programming language, that visually shows the use of the resources of some hardware components. This software shows graphically the percentage of use of the central processing unit, CPU, as well as the main memory and the main storage unit, as well as some other information regarding the computer hardware.
+                                </p>
+                                <a href="https://github.com/FabioPelagaggi/PC_Resources_Monitor.git" target="_blank" class="button button--flex button--small portfolio_button">
+                                    Download on GitHub
+                                    <i class="uil uil-code-branch button_icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="portfolio_content grid swiper-slide">
+                            <img src="assets/images/MT_Bouncing_Balls.png" alt="Multithreading Buncing Ball Screenshot" class="portfolio_img">
+
+                            <div class="portfolio_data">
+                                <h3 class="portfolio_title">Multithreading Bouncing Ball</h3>
+                                <p class="portfolio_description">
+                                    Software developed to demonstrate, in a visual way, the functioning of multithreading in Python. Recommended using process management tools, such as ProcessExplorer, to better visualize the behavior of threads in the system. The software creates a thread to processes the ball movement of each ball by demand. Therefore, creating multiples threads that can be observed.
+                                </p>
+                                <a href="https://github.com/FabioPelagaggi/Multithreading-Bouncing-Balls.git" target="_blank" class="button button--flex button--small portfolio_button">
+                                    Download on GitHub
+                                    <i class="uil uil-code-branch button_icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="portfolio_content grid swiper-slide">
+                            <img src="assets/images/Memory_Game.jpg" alt="Memory Game Screenshot" class="portfolio_img">
+
+                            <div class="portfolio_data">
+                                <h3 class="portfolio_title">Memory Game</h3>
+                                <p class="portfolio_description">
+                                    Project developed using HTML5, CSS3 and JavaScript, with tools like JQuery on the backend.
+                                </p>
+                                <a href="https://github.com/FabioPelagaggi/Memory-Game.git" target="_blank" class="button button--flex button--small portfolio_button">
+                                    Download on GitHub
+                                    <i class="uil uil-code-branch button_icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="portfolio_content grid swiper-slide">
+                            <img src="assets/images/MP_Bouncing_Balls.png" alt="Multiprocessing-LocalHost Bouncing Balls Screenshot" class="portfolio_img">
+
+                            <div class="portfolio_data">
+                                <h3 class="portfolio_title">Multiprocessing-LocalHost Bouncing Balls</h3>
+                                <p class="portfolio_description">
+                                    Software developed to demonstrate, in a visual way, the functioning of multiprocessing in Python. Recommended using process management tools, such as ProcessExplorer, to better visualize the behavior of threads in the system. The software creates a thread to processes the ball movement of each ball by demand. Therefore, creating multiples threads that can be observed.
+                                </p>
+                                <a href="https://github.com/FabioPelagaggi/Multiprocessing-LocalHost-Bouncing-Balls.git" target="_blank" class="button button--flex button--small portfolio_button">
+                                    Download on GitHub
+                                    <i class="uil uil-code-branch button_icon"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                    
+                    <div class="swiper-button-next">
+                        <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+                    </div>
+                    <div class="swiper-button-prev">
+                        <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+                    </div>
+                </div>
+            </section>
+
+            <section class="contact section" id="contact">
+                <h2 class="section_title">Contact Me</h2>
+                <!-- <span class="section_subtitle"> </span> -->
+                <div class="contact_container container grid">
+                    <form action="https://formspree.io/f/mleazydv" method="POST" class="contact_form grid">
+                        <div class="contact_inputs grid">
+                            <div class="contact_content">
+                                <label class="contact_label">Name</label>
+                                <input name="name" type="text" class="contact_input" required>
+                            </div>
+                            <div class="contact_content">
+                                <label class="contact_label">E-mail</label>
+                                <input type="email" name="_replyto" class="contact_input" required>
+                            </div>
+                        </div>
+                        <div class="contact_content">
+                            <label class="contact_label">Subject</label>
+                            <input name="subject" type="text" class="contact_input" required>
+                        </div>
+                        <div class="contact_content">
+                            <label class="contact_label">Message</label>
+                            <textarea name="message" cols="10" rows="10" class="contact_input"></textarea>
+                        </div>
+                        <div>
+                            <button type="submit" class="button button--flex button_form">
+                                Send Message
+                                <i class="uil uil-message button_icon"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="footer">
+            <div class="footer_bg">
+                <div class="footer_container container grid">
+                    <div>
+                        <h2 class="footer_title">Fábio Pelagaggi</h2>
+                        <span class="footer_subtitle">Software Engineering</span>
+                    </div>
+
+                    <ul class="footer_links">
+                        <li>
+                            <a href="#skills" class="footer_link">Skills</a>
+                        </li>
+                        <li>
+                            <a href="#knowledges" class="footer_link">Knowledges</a>
+                        </li>
+                        <li>
+                            <a href="#qualification" class="footer_link">Qualification</a>
+                        </li>
+                        <li>
+                            <a href="#portfolio" class="footer_link">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="#contact" class="footer_link">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="footer_socials">
+                        <a href="https://www.linkedin.com/in/f%C3%A1bio-pelagaggi-61551a1a8" target="_blank" class="footer_social">
+                            <i class="uil uil-linkedin"></i>
+
+                        </a>
+                        <a href="https://github.com/FabioPelagaggi" target="_blank" class="footer_social">
+                            <i class="uil uil-github"></i>
+                        </a>
+                    </div>
+                </div>
+                <p class="footer_copy">
+                    &#169; Fábio Pelagaggi. Right Reserved
+                </p>
+            </div>
+        </footer>
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="uil uil-angle-up scrollup_icon"></i>
+        </a>
+
+        <script src="assets/js/swiper-bundle.min.js"></script>    
+        <script src="assets/js/script.js"></script>      
+    </body>
+</html>
