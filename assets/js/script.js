@@ -1,163 +1,214 @@
-const navMenu = document.getElementById('nav-menu')
-const navToggle = document.getElementById('nav-toggle')
-const navClose = document.getElementById('nav-close')
+$(document).ready(function() {
 
-if(navToggle){
-    navToggle.addEventListener('click', () => {
-        navMenu.classList.add('show-menu')
-    })
-}
+    //------------- NavMenu ------------- //
+    //------------- Without JQuery ------------- ////
+    // const navMenu = document.getElementById('nav-menu')
+    // const navToggle = document.getElementById('nav-toggle')
+    // const navClose = document.getElementById('nav-close')
 
-if(navClose){
-    navClose.addEventListener('click', () => {
-        navMenu.classList.remove('show-menu')
-    })
-}
 
-const navLink = document.querySelectorAll('.nav_link')
+    // if(navToggle){
+    //     navToggle.addEventListener('click', () => {
+    //         navMenu.classList.add('show-menu')
+    //     })
+    // }
+    // if(navClose){
+    //     navClose.addEventListener('click', () => {
+    //         navMenu.classList.remove('show-menu')
+    //     })
+    // }
 
-function linkAction(){
-    navMenu.classList.remove('show-menu')
-}
-navLink.forEach(n => n.addEventListener('click', linkAction))
+    // const navLink = document.querySelectorAll('.nav_link')
 
-const skillsContent = document.getElementsByClassName('skills_content')
-const skillsHeader = document.querySelectorAll('.skills_header')
+    // function linkAction(){
+    //     navMenu.classList.remove('show-menu')
+    // }
+    // navLink.forEach(n => n.addEventListener('click', linkAction))
 
-function toggleSkills(){
-    let itemClass = this.parentNode.className
+    //------------- NavMenu ------------- //
+    //------------- With JQuery ------------- ////
+    const navMenu = $('#nav-menu')
+    const navToggle = $('#nav-toggle')
+    const navClose = $('#nav-close')
 
-    for(i = 0; i < skillsContent.length; i++){
-        skillsContent[i].className = 'skills_content skills_close'
+    if(navToggle){
+        navToggle.click(() => {
+            navMenu.addClass('show-menu')
+        }) 
     }
-    if(itemClass === 'skills_content skills_close'){
-        this.parentNode.className = 'skills_content skills_open'
+    if(navClose){
+        navClose.click(() => {
+            navMenu.removeClass('show-menu')
+        })
     }
-}
-skillsHeader.forEach((el) => {
-    el.addEventListener('click', toggleSkills)
-})
 
-const tabs = document.querySelectorAll('[data-target]')
-const tabContents = document.querySelectorAll('[data-content]')
+    const navLink = $('.nav_link')
 
-tabs.forEach(tab => {
-    tab.addEventListener('click', () => {
-        const target = document.querySelector(tab.dataset.target)
-
-        tabContents.forEach(tabContent => {
-            tabContent.classList.remove('qualification_active')
-        })
-        target.classList.add('qualification_active')
-
-        tabs.forEach(tab => {
-            tab.classList.remove('qualification_active')
-        })
-        tab.classList.add('qualification_active')
-    })
-})
-
-const skillsBar = []
-const skillsStats = []
-
-$('.skills_percentage').each(function () {skillsBar.push(this)})
-$('.skills_number').each(function () {skillsStats.push(this.innerHTML)})
-
-function linkStats(barList, statsList){
-    for(let i = 0; i <= barList.length-1 ; i++){
-        barList[i].style.width=(statsList[i])
+    function linkAction(){
+        navMenu.removeClass('show-menu')
     }
-}
-linkStats(skillsBar, skillsStats)
-
-const modalViews = document.querySelectorAll('.knowledges_modal')
-const modalButtons = document.querySelectorAll('.knowledges_button')
-const modalCloses = document.querySelectorAll('.knowledges_modal-close')
-
-let modal = function(modalCLick){
-    modalViews[modalCLick].classList.add('active-modal')
-}
-modalButtons.forEach((modalButton, i) =>{
-    modalButton.addEventListener('click', () => {
-        modal(i)
+    navLink.each(function(){
+        $(this).click(linkAction)
     })
-})
-modalCloses.forEach((modalClose)=>{
-    modalClose.addEventListener('click', () => {
-        modalViews.forEach((modalView) => {
-            modalView.classList.remove('active-modal')
-        })
-    })
-})
 
-let swiper = new Swiper(".portfolio_container", {
-    cssMode: true,
-    loop: true,
+    //------------- Skills ------------- //
+    //------------- Without JQuery ------------- ////
+    const skillsContent = document.getElementsByClassName('skills_content')
+    const skillsHeader = document.querySelectorAll('.skills_header')
 
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    mousewheel: true,
-    keyboard: true,
-});
-
-const sections = document.querySelectorAll('section[id]')
-
-function scrollActive(){
-    const scrollY = window.pageYOffset
-
-    sections.forEach(current =>{
-        const sectionHeight = current.offsetHeight
-        const sectionTop = current.offsetTop - 50;
-        sectionId = current.getAttribute('id')
-
-        if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
-            document.querySelector('.nav_menu a[href*=' + sectionId + ']').classList.add('active-link')
-        }else{
-            document.querySelector('.nav_menu a[href*=' + sectionId + ']').classList.remove('active-link')
+    function toggleSkills(){
+        let itemClass = this.parentNode.className
+        
+        for(i = 0; i < skillsContent.length; i++){
+            skillsContent[i].className = 'skills_content skills_close'
         }
+        if(itemClass === 'skills_content skills_close'){
+            this.parentNode.className = 'skills_content skills_open'
+        }
+    }
+    skillsHeader.forEach((el) => {
+        el.addEventListener('click', toggleSkills)
     })
-}
-window.addEventListener('scroll', scrollActive)
 
-function scrollUp(){
-    const scrollUp = document.getElementById('scroll-up');
-    // When the scroll is higher than 560 viewport height, add the show-scroll class to the a tag with the scroll-top class
-    if(this.scrollY >= 560) scrollUp.classList.add('show-scroll'); else scrollUp.classList.remove('show-scroll')
-}
-window.addEventListener('scroll', scrollUp)
+    //------------- Auto Skills Percentage ------------- //
+    //------------- With JQuery ------------- ////
+    const skillsBar = []
+    const skillsStats = []
 
-// Dark Theme Config
-const themeButton = document.getElementById('theme-button')
-const darkTheme = 'dark-theme'
-const iconTheme = 'uil-sun'
+    $('.skills_percentage').each(function () {skillsBar.push(this)})
+    $('.skills_number').each(function () {skillsStats.push(this.innerHTML)})
 
-// Previously selected topic (if user selected)
-const selectedTheme = localStorage.getItem('selected-theme')
-const selectedIcon = localStorage.getItem('selected-icon')
+    function linkStats(barList, statsList){
+        for(let i = 0; i <= barList.length-1 ; i++){
+            barList[i].style.width=(statsList[i])
+        }
+    }
+    linkStats(skillsBar, skillsStats)
 
-// We obtain the current theme that the interface has by validating the dark-theme class
-const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dark' : 'light'
-const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'uil-moon' : 'uil-sun'
+    //------------- Qualification ------------- //
+    //------------- Without JQuery ------------- ////
 
-// We validate if the user previously chose a topic
-if (selectedTheme) {
-  // If the validation is fulfilled, we ask what the issue was to know if we activated or deactivated the dark
-  document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme)
-  themeButton.classList[selectedIcon === 'uil-moon' ? 'add' : 'remove'](iconTheme)
-}
+    const tabs = document.querySelectorAll('[data-target]')
+    const tabContents = document.querySelectorAll('[data-content]')
 
-// Activate / deactivate the theme manually with the button
-themeButton.addEventListener('click', () => {
-    // Add or remove the dark / icon theme
-    document.body.classList.toggle(darkTheme)
-    themeButton.classList.toggle(iconTheme)
-    // We save the theme and the current icon that the user chose
-    localStorage.setItem('selected-theme', getCurrentTheme())
-    localStorage.setItem('selected-icon', getCurrentIcon())
+    tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+            const target = document.querySelector(tab.dataset.target)
+
+            tabContents.forEach(tabContent => {
+                tabContent.classList.remove('qualification_active')
+            })
+            target.classList.add('qualification_active')
+
+            tabs.forEach(tab => {
+                tab.classList.remove('qualification_active')
+            })
+            tab.classList.add('qualification_active')
+        })
+    })
+
+    //------------- Knowledge ------------- //
+    //------------- Without JQuery ------------- ////
+
+    const modalViews = document.querySelectorAll('.knowledges_modal')
+    const modalButtons = document.querySelectorAll('.knowledges_button')
+    const modalCloses = document.querySelectorAll('.knowledges_modal-close')
+
+    let modal = function(modalCLick){
+        modalViews[modalCLick].classList.add('active-modal')
+    }
+    modalButtons.forEach((modalButton, i) =>{
+        modalButton.addEventListener('click', () => {
+            modal(i)
+        })
+    })
+    modalCloses.forEach((modalClose)=>{
+        modalClose.addEventListener('click', () => {
+            modalViews.forEach((modalView) => {
+                modalView.classList.remove('active-modal')
+            })
+        })
+    })
+
+    //------------- Portfolio ------------- //
+    //------------- Without JQuery ------------- ////
+
+    let swiper = new Swiper(".portfolio_container", {
+        cssMode: true,
+        loop: true,
+
+        navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        },
+        mousewheel: true,
+        keyboard: true,
+    });
+
+    //------------- Active Scroll Page Section ------------- //
+    //------------- Without JQuery ------------- ////
+
+    const sections = document.querySelectorAll('section[id]')
+
+    function scrollActive(){
+        const scrollY = window.pageYOffset
+
+        sections.forEach(current =>{
+            const sectionHeight = current.offsetHeight
+            const sectionTop = current.offsetTop - 50;
+            sectionId = current.getAttribute('id')
+
+            if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
+                document.querySelector('.nav_menu a[href*=' + sectionId + ']').classList.add('active-link')
+            }else{
+                document.querySelector('.nav_menu a[href*=' + sectionId + ']').classList.remove('active-link')
+            }
+        })
+    }
+    window.addEventListener('scroll', scrollActive)
+
+    function scrollUp(){
+        const scrollUp = document.getElementById('scroll-up');
+        // When the scroll is higher than 560 viewport height, add the show-scroll class to the a tag with the scroll-top class
+        if(this.scrollY >= 560) scrollUp.classList.add('show-scroll'); else scrollUp.classList.remove('show-scroll')
+    }
+    window.addEventListener('scroll', scrollUp)
+
+    //------------- Dark Theme Config ------------- //
+    //------------- Without JQuery ------------- ////
+
+    // Dark Theme Config
+    const themeButton = document.getElementById('theme-button')
+    const darkTheme = 'dark-theme'
+    const iconTheme = 'uil-sun'
+
+    // Previously selected topic (if user selected)
+    const selectedTheme = localStorage.getItem('selected-theme')
+    const selectedIcon = localStorage.getItem('selected-icon')
+
+    // We obtain the current theme that the interface has by validating the dark-theme class
+    const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dark' : 'light'
+    const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'uil-moon' : 'uil-sun'
+
+    // We validate if the user previously chose a topic
+    if (selectedTheme) {
+    // If the validation is fulfilled, we ask what the issue was to know if we activated or deactivated the dark
+    document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme)
+    themeButton.classList[selectedIcon === 'uil-moon' ? 'add' : 'remove'](iconTheme)
+    }
+
+    // Activate / deactivate the theme manually with the button
+    themeButton.addEventListener('click', () => {
+        // Add or remove the dark / icon theme
+        document.body.classList.toggle(darkTheme)
+        themeButton.classList.toggle(iconTheme)
+        // We save the theme and the current icon that the user chose
+        localStorage.setItem('selected-theme', getCurrentTheme())
+        localStorage.setItem('selected-icon', getCurrentIcon())
+    })
+
 })
